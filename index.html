@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+        <script src = "script.js"></script>
+        <script src = "button.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <title>Weather Dashboard</title>
+    <body>
+        <header>Weather Dashboard</header>
+        <main class="row">
+        <div class="col-sm-4 col-lg-3 bg-light">
+        <div id="searchbar">
+            <p>Search for a city</p>
+            <div class="input-group p-md-4 p-1">
+            <input id="searchCity" type="text" placeholder="city">
+            <button id="search"></button>
+            </div>
+            <p id="error"></p>
+            <div id="searchHistory" class="m-md-4 m-1"></div>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-8 col-lg-9">
+        <div id="currentCity" class="m-md-4 m-1">
+            <h2 id = "currentCityName"></h2>
+            <h7 id = "currentDate"></h7>
+            <img id = "currentIcon" height="60" width="60">
+            <ul>
+                <li id="temp"></li>
+                <li id="humidity"></li>
+                <li id="windspeed"></li>
+                <li>UV Index: <span id="uvIndex"></span></li>
+            </ul>
+        </div>
+       </div>
+        <div class="flex mt-4">
+            <h2>5-Day Forecast</h2>
+            <div class="mt-4 forecasts">
+                <div class="card bg-primary p-2 text-white forecast_card" id="forecast_1">
+                    <h4 class="f_city_name">...</h4>
+                    <div class="f_image">
+                        
+                    </div>
+                    <h5 class="f_temp">Temp: ...</h4>
+                    <h5 class="f_hum">Humidity: ...</h4>
+                </div>
+                <div class="card bg-primary p-2 text-white forecast_card" id="forecast_2">
+                    <h4 class="f_city_name">...</h4>
+                    <div class="f_image">
+                        
+                    </div>
+                    <h5 class="f_temp">Temp: ...</h4>
+                    <h5 class="f_hum">Humidity: ...</h4>
+                </div>
+                <div class="card bg-primary p-2 text-white forecast_card" id="forecast_3">
+                    <h4 class="f_city_name">...</h4>
+                    <div class="f_image">
+                        
+                    </div>
+                    <h5 class="f_temp">Temp: ...</h4>
+                    <h5 class="f_hum">Humidity: ...</h4>
+                </div>
+                <div class="card bg-primary p-2 text-white forecast_card" id="forecast_4">
+                    <h4 class="f_city_name">...</h4>
+                    <div class="f_image">
+                        
+                    </div>
+                    <h5 class="f_temp">Temp: ...</h4>
+                    <h5 class="f_hum">Humidity: ...</h4>
+                </div>
+                <div class="card bg-primary p-2 text-white forecast_card" id="forecast_5">
+                    <h4 class="f_city_name">...</h4>
+                    <div class="f_image">
+                        
+                    </div>
+                    <h5 class="f_temp">Temp: ...</h4>
+                    <h5 class="f_hum">Humidity: ...</h4>
+                </div>
+        </main>
+    </body>
+</html>
