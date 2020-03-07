@@ -20,9 +20,9 @@ $("#search").on("click", function () {
     currentCityCall(currentCity);
 });
 
-$(pastCities).on("click", function () {
-  clickCity = ($(pastCities).val());
-  currentCityCall(clickCity);
+$(`#pastCities`).on("click", function () {
+  currentCity = ($(`#pastCities`).val());
+  currentCityCall(currentCity);
 });
 
     function currentCityCall(city) {     
@@ -100,7 +100,7 @@ $(pastCities).on("click", function () {
     if (pastCities == false){
     }
     else {
-        searchHistory.prepend(`<button type="button" class="list-group-item list-group-item-action active" id =${pastCities} >` + pastCities + ' </button>');
+        searchHistory.prepend(`<button type="button" class="list-group-item list-group-item-action active" id = "${pastCities}" >` + pastCities + ' </button>');
     }
         });
     }
